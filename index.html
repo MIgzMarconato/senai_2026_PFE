@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PescaGO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .bg-verde { background-color: #0f6b4b; }
+        .bg-azul { background-color: #1b4b6c; }
+        .btn-verde { background-color: #0f6b4b; color: white; border-radius: 30px; }
+        .btn-verde:hover { background-color: #0a523a; color: white; }
+        .nav-link { color: white !important; font-weight: 500; }
+        .nav-link:hover { color: #ffd966 !important; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-azul py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">
+                <i class="bi bi-water text-white"></i> PescaGO
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-house-door"></i> Início</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-info-circle"></i> Sobre</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-geo-alt"></i> Destinos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-images"></i> Galeria</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"><i class="bi bi-telephone"></i> Contato</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="#" class="btn btn-verde px-4 py-2"><i class="bi bi-envelope-paper"></i> Assinar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselPesca" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselPesca" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselPesca" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselPesca" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/hieunghiamini-fishing-boat-at-sea-8095632_1280.jpg">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-4 p-3">
+                    <h5>Aventura garantida</h5>
+                    <p>Os melhores rios e lagos do Brasil</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/k_malik-fishing-boat-5541327_1280.jpg">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-4 p-3">
+                    <h5>Equipamentos profissionais</h5>
+                    <p>Tudo que você precisa para uma boa pescaria</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./img/marcellosokal-man-7834594_1280.jpg">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-4 p-3">
+                    <h5>Guias especializados</h5>
+                    <p>Acompanhamento profissional em todas as expedições</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPesca" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselPesca" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <div class="p-4 bg-light rounded-4 shadow-sm">
+                    <h2 class="fw-bold mb-3" style="color: #1b4b6c;">Sobre a PescaGO</h2>
+                    <p class="lead mb-4">
+                        Somos a maior comunidade de pesca esportiva do Brasil. 
+                        Mais de 15 anos de experiência levando você aos melhores pontos de pesca, 
+                        com toda segurança, conforto e diversão.
+                    </p>
+                    <p class="mb-4">
+                        <i class="bi bi-check-circle-fill text-verde"></i> 5.000+ expedições realizadas<br>
+                        <i class="bi bi-check-circle-fill text-verde"></i> Guias certificados<br>
+                        <i class="bi bi-check-circle-fill text-verde"></i> Equipamentos inclusos
+                    </p>
+                    <a href="#" class="btn btn-verde btn-lg px-5 py-3 fw-bold">
+                        <i class="bi bi-envelope-paper-fill"></i> ASSINAR 
+                    </a>
+                    <p class="text-muted mt-3 small">Receba dicas e ofertas exclusivas</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-azul text-white text-center py-3">
+        <div class="container">
+            <p class="mb-0">PescaGO &copy; 2026 - Feito com Bootstrap</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
